@@ -1,5 +1,12 @@
 <?php
-    
+    $randomNumbers = [];
+
+    while (count($randomNumbers) < 15) { 
+        $randomInt = rand(0, 100);
+        if (!in_array($randomInt, $randomNumbers)) {
+            $randomNumbers[] = $randomInt;
+        }
+    }
 ?>
 
 
@@ -13,6 +20,11 @@
     <title>PHP - Snack 4</title>
 </head>
 <body>
-    
+    <ul>
+    <?php for ($i=0; $i < count($randomNumbers); $i++) { ?>
+        <li><?php echo $randomNumbers[$i]; ?></li>
+        
+    <?php } ?>
+    </ul>
 </body>
 </html>
