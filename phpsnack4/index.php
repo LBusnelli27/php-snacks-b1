@@ -23,7 +23,6 @@
     <ul>
     <?php for ($i=0; $i < count($randomNumbers); $i++) { ?>
         <li><?php echo $randomNumbers[$i]; ?></li>
-        
     <?php } ?>
     </ul>
 </body>
